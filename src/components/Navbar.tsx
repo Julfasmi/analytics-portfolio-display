@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 py-4">
         <nav className="flex items-center justify-between">
           <a href="#" className="text-2xl font-bold text-ds-navy dark:text-ds-lightest">
-            <span className="text-ds-teal">D</span>ata<span className="text-ds-teal">S</span>cientist
+            <span className="text-ds-teal">D</span>ata<span className="text-ds-teal"> S</span>cientist
           </a>
           
           {/* Desktop Navigation */}

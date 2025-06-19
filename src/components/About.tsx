@@ -10,20 +10,21 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-12 mt-12">
           <div className="md:w-2/3 space-y-4">
             <p className="text-ds-slate text-lg">
-              Hello! I'm John, a passionate data scientist with over 5 years of experience in analyzing complex datasets
-              and extracting meaningful insights. My journey into data science began during my graduate studies in
-              Statistics at XYZ University, where I discovered the power of using data to solve real-world problems.
+            Hello! I'm Julfasmi, a data scientist with a strong foundation in statistics and two years of hands-on 
+            experience in crafting end-to-end data science solutions. My journey into data began during my studies 
+            in Statistics at the Islamic University of Indonesia, where I specialized in Data Science.
             </p>
             
             <p className="text-ds-slate text-lg">
-              I've had the privilege of working with diverse organizations, from startups to Fortune 500 companies,
-              helping them make data-driven decisions. My approach combines rigorous statistical analysis with machine
-              learning techniques to uncover patterns and trends that drive business value.
+            I've developed machine learning models for object detection and emotion recognition, automated reporting 
+            workflows, and created insightful dashboards to support data-driven decision-making. My professional experience 
+            spans working with clients and organizations to transform raw data into meaningful insights using tools like Python, SQL, Excel, Tableau, and Power BI.
             </p>
             
             <p className="text-ds-slate text-lg">
-              When I'm not deep in data analysis, you can find me contributing to open-source data science projects,
-              mentoring aspiring data scientists, or exploring the latest advancements in artificial intelligence.
+            Outside of project work, I'm passionate about continuous learning, sharing knowledge through Medium 
+            articles, and contributing to open-source analytics workflows. I believe that great data storytelling 
+            drives impact — and I'm always excited to solve new challenges.
             </p>
             
             <div className="pt-4" id="skills">
@@ -31,7 +32,7 @@ const About = () => {
               
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 <SkillTag>Python</SkillTag>
-                <SkillTag>R</SkillTag>
+                <SkillTag>RStudio</SkillTag>
                 <SkillTag>SQL</SkillTag>
                 <SkillTag>Machine Learning</SkillTag>
                 <SkillTag>Deep Learning</SkillTag>
@@ -39,9 +40,12 @@ const About = () => {
                 <SkillTag>Data Visualization</SkillTag>
                 <SkillTag>A/B Testing</SkillTag>
                 <SkillTag>Big Data</SkillTag>
-                <SkillTag>Natural Language Processing</SkillTag>
-                <SkillTag>Time Series Analysis</SkillTag>
-                <SkillTag>Cloud Computing</SkillTag>
+                <SkillTag>Excel</SkillTag>
+                <SkillTag>Tableau</SkillTag>
+                <SkillTag>Power BI</SkillTag>
+                <SkillTag>Git/GitHub</SkillTag>
+                <SkillTag>SPSS</SkillTag>
+                <SkillTag>Minitab</SkillTag>
               </div>
             </div>
           </div>
@@ -55,27 +59,23 @@ const About = () => {
                   
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-medium text-ds-navy dark:text-ds-lightest">Master of Science in Statistics</h4>
-                      <p className="text-ds-slate">XYZ University, 2015-2017</p>
+                      <h4 className="font-medium text-ds-navy dark:text-ds-lightest">Bachelor of Science in Statistics</h4>
+                      <p className="text-ds-slate">Islamic University of Indonesia, 2018-2022</p>
                     </div>
                     
                     <div>
-                      <h4 className="font-medium text-ds-navy dark:text-ds-lightest">Bachelor of Science in Mathematics</h4>
-                      <p className="text-ds-slate">ABC University, 2011-2015</p>
+                      <h4 className="font-medium text-ds-navy dark:text-ds-lightest">Graduated Cum Laude</h4>
+                      <p className="text-ds-slate">GPA: 3.51</p>
                     </div>
-                  </div>
-                  
-                  <h3 className="text-xl font-semibold text-ds-navy dark:text-ds-lightest mt-6 mb-4">Certifications</h3>
-                  
-                  <div className="space-y-4">
+
                     <div>
-                      <h4 className="font-medium text-ds-navy dark:text-ds-lightest">AWS Certified Machine Learning</h4>
-                      <p className="text-ds-slate">Amazon Web Services, 2022</p>
+                      <h4 className="font-medium text-ds-navy dark:text-ds-lightest">Focus</h4>
+                      <p className="text-ds-slate">Data Science</p>
                     </div>
-                    
+
                     <div>
-                      <h4 className="font-medium text-ds-navy dark:text-ds-lightest">TensorFlow Developer Certificate</h4>
-                      <p className="text-ds-slate">Google, 2021</p>
+                      <h4 className="font-medium text-ds-navy dark:text-ds-lightest">Thesis</h4>
+                      <p className="text-ds-slate">“Comparison of Apriori and FP-Growth Algorithm Methods in Understanding Consumer Behavior Patterns”</p>
                     </div>
                   </div>
                 </div>

@@ -17,18 +17,18 @@ const Contact = () => {
             </p>
             
             <div className="space-y-4">
-              <ContactItem icon={<Mail size={20} />} text="john.doe@example.com" />
-              <ContactItem icon={<Phone size={20} />} text="+1 (555) 123-4567" />
-              <ContactItem icon={<MapPin size={20} />} text="San Francisco, CA" />
+              <ContactItem icon={<Mail size={20} />} text="julfasmi.19@gmail.com" />
+              <ContactItem icon={<Phone size={20} />} text="+62 821-3803-6144" />
+              <ContactItem icon={<MapPin size={20} />} text="Depok City, West Java" />
             </div>
             
             <div className="pt-4">
-              <h3 className="text-xl font-semibold text-ds-navy dark:text-ds-lightest mb-4">Follow Me</h3>
+              <h3 className="text-xl font-semibold text-ds-navy dark:text-ds-lightest mb-4">More</h3>
               <div className="flex gap-4">
-                <SocialLink name="LinkedIn" url="#" />
-                <SocialLink name="GitHub" url="#" />
-                <SocialLink name="Twitter" url="#" />
-                <SocialLink name="Medium" url="#" />
+                <SocialLink name="LinkedIn" url="https://www.linkedin.com/in/julfasmi/" />
+                <SocialLink name="GitHub" url="https://github.com/Julfasmi" />
+                <SocialLink name="WhatsApp" url="https://wa.me/6282138036144" />
+                <SocialLink name="Medium" url="https://medium.com/@julfasmi" />
               </div>
             </div>
           </div>
@@ -113,6 +113,8 @@ const SocialLink = ({ name, url }: { name: string; url: string }) => {
   return (
     <a 
       href={url} 
+      target="_blank" 
+      rel="noopener noreferrer"
       className="px-4 py-2 border border-gray-200 dark:border-gray-700 rounded-md text-ds-slate hover:text-ds-teal hover:border-ds-teal transition-all duration-300"
     >
       {name}
