@@ -10,11 +10,11 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-ds-slate text-sm mb-4 md:mb-0">
-            &copy; {currentYear} John Doe. All rights reserved.
+          
           </p>
           
           <p className="text-ds-slate text-sm flex items-center gap-1">
-            Built with <Heart size={16} className="text-ds-teal" /> using React & Tailwind CSS
+            <Heart size={16} className="text-ds-teal" /> 
           </p>
         </div>
       </div>

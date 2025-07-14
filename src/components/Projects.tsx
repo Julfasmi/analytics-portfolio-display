@@ -5,36 +5,20 @@ import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Predictive Customer Churn Analysis",
-      description: "Developed a machine learning model to predict customer churn with 92% accuracy, helping a telecom company reduce churn by 15%.",
-      tags: ["Python", "Scikit-learn", "XGBoost", "Pandas", "Matplotlib"],
+      title: "Model object detection with YOLO",
+      description: "Developing a machine learning model to predict an object in an image with maximum accuracy.",
+      tags: ["Python", "Scikit-ultralytics", "opencv", "Pandas", "Matplotlib"],
       image: "bg-blue-100 dark:bg-blue-900",
       github: "#",
       demo: "#"
     },
     {
-      title: "Natural Language Processing for Sentiment Analysis",
-      description: "Created an NLP model to analyze customer reviews and social media mentions, providing real-time sentiment analysis for a retail brand.",
-      tags: ["Python", "NLTK", "TensorFlow", "BERT", "Flask"],
+      title: "Building APIs using FastAPI",
+      description: "Create a simple API using FastAPI.",
+      tags: ["Python", "fastapi", "uvicorn"],
       image: "bg-green-100 dark:bg-green-900",
       github: "#",
       demo: "#"
-    },
-    {
-      title: "Time Series Forecasting for Sales Prediction",
-      description: "Built a time series model that improved sales forecasting accuracy by 25%, helping optimize inventory management for an e-commerce platform.",
-      tags: ["R", "Prophet", "ARIMA", "dplyr", "ggplot2"],
-      image: "bg-purple-100 dark:bg-purple-900",
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Clustering Algorithm for Customer Segmentation",
-      description: "Implemented K-means and hierarchical clustering to segment customers based on purchasing behavior, leading to a 20% increase in marketing ROI.",
-      tags: ["Python", "Scikit-learn", "K-means", "Tableau", "SQL"],
-      image: "bg-orange-100 dark:bg-orange-900",
-      github: "#",
-      demo: null
     }
   ];
 
