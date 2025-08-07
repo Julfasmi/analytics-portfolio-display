@@ -9,16 +9,16 @@ const Projects = () => {
       description: "Developing a machine learning model to predict an object in an image with maximum accuracy.",
       tags: ["Python", "Scikit-ultralytics", "opencv", "Pandas", "Matplotlib"],
       image: "bg-blue-100 dark:bg-blue-900",
-      github: "#",
-      demo: "#"
+      github: "https://github.com/Julfasmi/Object-Detection",
+      demo: "https://drive.google.com/drive/folders/1CJkQRn6gyzJg_W8hplGl6keFUzUDN25o?usp=sharing"
     },
     {
       title: "Building APIs using FastAPI",
       description: "Create a simple API using FastAPI.",
       tags: ["Python", "fastapi", "uvicorn"],
       image: "bg-green-100 dark:bg-green-900",
-      github: "#",
-      demo: "#"
+      github: "https://github.com/Julfasmi/Rest-API",
+      demo: "https://rest-api-production-56d2.up.railway.app/docs"
     }
   ];
 
@@ -35,7 +35,7 @@ const Projects = () => {
         
         <div className="mt-12 text-center">
           <a 
-            href="#" 
+            href="https://github.com/Julfasmi" 
             className="inline-flex items-center gap-2 text-ds-teal hover:underline transition-all"
           >
             View More Projects

@@ -112,7 +112,7 @@
   }
   
   .contact-input {
-    @apply w-full bg-white dark:bg-opacity-5 rounded-md py-3 px-4 text-ds-slate focus:outline-none focus:ring-2 focus:ring-ds-teal focus:ring-opacity-50 transition-all duration-300;
+    @apply w-full border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 bg-white dark:bg-ds-navy text-ds-navy dark:text-ds-lightest placeholder-gray-400;
   }
 }
 
