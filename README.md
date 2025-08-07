@@ -1,3 +1,7 @@
+##Deploy
+https://julfasmi-portfolio.lovable.app
+http://julfasmi-portfolio.up.railway.app
+
 # Welcome to your Lovable project
 
 ## Project info
