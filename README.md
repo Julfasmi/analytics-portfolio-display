@@ -1,6 +1,6 @@
 ##Deploy
 https://julfasmi-portfolio.lovable.app
-http://julfasmi-portfolio.up.railway.app
+analytics-portfolio-display.vercel.app
 
 # Welcome to your Lovable project
 
