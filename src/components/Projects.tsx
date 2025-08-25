@@ -10,7 +10,7 @@ const Projects = () => {
       tags: ["Python", "Scikit-ultralytics", "opencv", "Pandas", "Matplotlib"],
       image: "bg-blue-100 dark:bg-blue-900",
       github: "https://github.com/Julfasmi/Object-Detection",
-      demo: "https://drive.google.com/drive/folders/1CJkQRn6gyzJg_W8hplGl6keFUzUDN25o?usp=sharing"
+      demo: "https://object-detection19.streamlit.app/"
     },
     {
       title: "Building APIs using FastAPI",
