@@ -1,103 +1,6 @@
-<<<<<<< HEAD
 import React, { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 
-=======
-
-import React, { useEffect, useRef } from 'react';
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
-
-const Projects = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
-
-    let animationId: number;
-    let scrollPosition = 0;
-    const scrollSpeed = 0.5; // pixels per frame
-
-    const animate = () => {
-      scrollPosition += scrollSpeed;
-      
-      // Reset to start when reaching the end
-      if (scrollPosition >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-        scrollPosition = 0;
-      }
-      
-      scrollContainer.scrollLeft = scrollPosition;
-      animationId = requestAnimationFrame(animate);
-    };
-
-    // Start animation
-    animationId = requestAnimationFrame(animate);
-
-    // Pause on hover
-    const handleMouseEnter = () => cancelAnimationFrame(animationId);
-    const handleMouseLeave = () => {
-      scrollPosition = scrollContainer.scrollLeft;
-      animationId = requestAnimationFrame(animate);
-    };
-
-    scrollContainer.addEventListener('mouseenter', handleMouseEnter);
-    scrollContainer.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      cancelAnimationFrame(animationId);
-      scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
-      scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, []);
-  const projects = [
-    {
-      title: "Model object detection with YOLO",
-      description: "Developing a machine learning model to predict an object in an image with maximum accuracy.",
-      tags: ["Python", "Scikit-ultralytics", "opencv", "Pandas", "Matplotlib"],
-      image: "bg-blue-100 dark:bg-blue-900",
-      github: "https://github.com/Julfasmi/Object-Detection",
-      demo: "https://object-detection19.streamlit.app/"
-    },
-    {
-      title: "Building APIs using FastAPI",
-      description: "Create a simple API using FastAPI.",
-      tags: ["Python", "fastapi", "uvicorn"],
-      image: "bg-green-100 dark:bg-green-900",
-      github: "https://github.com/Julfasmi/Rest-API",
-      demo: "https://rest-api-production-56d2.up.railway.app/docs"
-    }
-  ];
-
-  return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto px-4 md:px-6">
-        <h2 className="section-title text-ds-navy dark:text-ds-lightest">Projects</h2>
-        
-        <div ref={scrollRef} className="mt-12 overflow-x-auto pb-4 scrollbar-hide cursor-grab">
-          <div className="flex gap-6 min-w-max">
-            {projects.map((project, index) => (
-              <div key={index} className="w-[350px] md:w-[400px] flex-shrink-0">
-                <ProjectCard project={project} index={index} />
-              </div>
-            ))}
-          </div>
-        </div>
-        
-        <div className="mt-12 text-center">
-          <a 
-            href="https://github.com/Julfasmi" 
-            className="inline-flex items-center gap-2 text-ds-teal hover:underline transition-all"
-          >
-            View More Projects
-            <ArrowRight size={16} />
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-};
-
->>>>>>> 1ba80a828880b6e86204d79ae8d68102b03a2688
 interface Project {
   title: string;
   description: string;
@@ -113,36 +16,60 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
+      title: "Social Media Data Scraping & Analysis: Sumatra Floods 2025",
+      description: "Collected public X (Twitter) data on the Sumatra Floods 2025 using keyword-based scraping for social media analysis.",
+      tags: ["Python", "Web Scraping", "X API (Twitter API)", "Data Collection", "Text Mining", "Social Media Analytics"],
+      image: "bg-red-100 dark:bg-red-900",
+      github: "https://github.com/Julfasmi/Scrape_X",
+      demo: null
+    },
+    {
       title: "Model Object Detection with YOLO",
-      description: "YOLO-based object detection with high accuracy.",
-      tags: ["Python", "YOLO", "OpenCV"],
+      description: "Implemented an object detection system using YOLO for detecting and localizing objects in images and videos.",
+      tags: ["Python", "YOLO", "Computer Vision", "Deep Learning", "Object Detection", "OpenCV"],
       image: "bg-blue-100 dark:bg-blue-900",
       github: "https://github.com/Julfasmi/Object-Detection",
       demo: "https://object-detection19.streamlit.app/"
     },
     {
       title: "REST API with FastAPI",
-      description: "Building scalable APIs using FastAPI.",
-      tags: ["Python", "FastAPI"],
+      description: "Developed a REST API with FastAPI to support data processing and machine learning services.",
+      tags: ["Python", "FastAPI", "API Integration", "REST API"],
       image: "bg-green-100 dark:bg-green-900",
       github: "https://github.com/Julfasmi/Rest-API",
       demo: "https://rest-api-production-56d2.up.railway.app/docs"
     },
     {
-      title: "Data Analysis Project",
-      description: "Exploratory data analysis and visualization.",
-      tags: ["Python", "Pandas"],
+      title: "Retail Sales & Profit Analysis Dashboard",
+      description: "Built an interactive Retail Sales & Profit Analysis Dashboard in Power BI using a built-in retail dataset to practice data visualization and business insight exploration.",
+      tags: ["Data Visualization", "Power BI", "Profit Analysis", "Retail Analytics", "Sales Analysis,"],
       image: "bg-purple-100 dark:bg-purple-900",
-      github: "https://github.com/Julfasmi",
+      github: "https://github.com/Julfasmi/Belajar-PowerBI",
       demo: null
     },
     {
-      title: "Machine Learning Pipeline",
-      description: "End-to-end ML pipeline for prediction.",
-      tags: ["Scikit-Learn"],
+      title: "Multi-channel digital campaign performance data dashboard",
+      description: "Built an interactive Looker Studio dashboard to track and analyze performance metrics across multiple digital marketing channels.",
+      tags: ["Looker Studio", "Digital Marketing Analytics", "Data Visualization", "KPI Monitoring", "Dashboarding"],
       image: "bg-yellow-100 dark:bg-yellow-900",
-      github: "https://github.com/Julfasmi",
-      demo: null
+      github: null,
+      demo: "https://lookerstudio.google.com/u/0/reporting/4afa64db-d1d6-4834-8d9b-8a9580efde08/page/09jUF"
+    },
+    {
+      title: "Consumer Behavior Dashboard",
+      description: "Built an interactive Looker Studio dashboard to analyze consumer behavior, demographics, and purchasing patterns.",
+      tags: ["Looker Studio", "Consumer Behavior Analysis", "Customer Segmentation", "Data Visualization", "Business Analytics"],
+      image: "bg-pink-100 dark:bg-pink-900",
+      github: null,
+      demo: "https://lookerstudio.google.com/u/0/reporting/696860d4-6fb1-42e6-9c04-13c9c9977d41/page/p_r0xp37divd"
+    },
+    {
+      title: "Text Mining with RStudio: People's Opinions",
+      description: "Performed text mining and sentiment analysis using R to analyze customer opinions about Swiss-Belboutique Yogyakarta Hotel, with insights published on Medium.",
+      tags: ["RStudio", "Text Mining", "Sentiment Analysis", "Natural Language Processing", "Data Visualization"],
+      image: "bg-cyan-100 dark:bg-cyan-900",
+      github: null,
+      demo: "https://julfasmi.medium.com/text-mining-dengan-rstudio-pendapat-orang-tentang-hotel-swiss-belboutique-yogyakarta-953183f7efb7"
     }
   ];
 

@@ -13,14 +13,13 @@ const Hero = () => {
               Julfasmi Hi. M. Nasir
             </h1>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ds-slate">
-              a Data Scientist turning data into <span className="text-gradient">Impact</span>.
+              a Data Scientist and Data Analyst transforming data into actionable <span className="text-gradient">Impact</span>.
             </h2>
             <p className="text-ds-slate max-w-lg text-lg">
-              With a solid foundation in statistics and experience in data science,
-              I specialize in crafting machine learning solutions, automating 
-              workflows, and visualizing data to uncover hidden patterns.
-              I combine technical expertise with storytelling to deliver insights that drive 
-              strategic actions and real-world impact.
+              With a strong foundation in statistics and hands-on experience in data science and analytics, I specialize in building machine learning models, performing data analysis, and transforming raw data into meaningful insights.
+            </p>
+            <p className="text-ds-slate max-w-lg text-lg">
+              I work across the full data lifecycle—data collection, cleaning, exploration, visualization, and modeling—combining analytical thinking with clear storytelling to support data-driven decisions and real-world impact.
             </p>
             <div className="pt-4">
               <a 

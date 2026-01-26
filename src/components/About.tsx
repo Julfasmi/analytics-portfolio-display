@@ -6,25 +6,24 @@ const About = () => {
     <section id="about" className="py-20 bg-gray-50 dark:bg-ds-navy/30">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="section-title text-ds-navy dark:text-ds-lightest">About Me</h2>
-        
+
         <div className="flex flex-col md:flex-row gap-12 mt-12">
           <div className="md:w-2/3 space-y-4">
             <p className="text-ds-slate text-lg">
-            Hello! I'm Julfasmi, a data scientist with a strong foundation in statistics and two years of hands-on 
-            experience in crafting end-to-end data science solutions. My journey into data began during my studies 
-            in Statistics at the Islamic University of Indonesia, where I specialized in Data Science.
+            Hello! I'm Julfasmi, a Data Scientist and Data Analyst with a strong foundation in statistics and two years of hands-on 
+            experience working across the data lifecycle—from data collection and analysis to visualization and machine learning. 
+            My journey into data began during my studies in Statistics at the Islamic University of Indonesia, where I specialized in Data Science.
             </p>
             
             <p className="text-ds-slate text-lg">
-            I've developed machine learning models for object detection and emotion recognition, automated reporting 
-            workflows, and created insightful dashboards to support data-driven decision-making. My professional experience 
-            spans working with clients and organizations to transform raw data into meaningful insights using tools like Python, SQL, Excel, Tableau, and Power BI.
+            I have experience developing machine learning models for object detection and emotion recognition, conducting exploratory 
+            data analysis (EDA), automating reporting workflows, and building interactive dashboards to support data-driven decision-making. 
+            I enjoy transforming raw, complex data into clear and actionable insights using tools such as Python, SQL, Excel, Tableau, and Power BI.
             </p>
             
             <p className="text-ds-slate text-lg">
-            Outside of project work, I'm passionate about continuous learning, sharing knowledge through Medium 
-            articles, and contributing to open-source analytics workflows. I believe that great data storytelling 
-            drives impact — and I'm always excited to solve new challenges.
+            Beyond project work, I’m passionate about continuous learning, sharing knowledge through Medium articles, and contributing to analytics 
+            and data workflows. I believe strong data analysis and storytelling are key to driving real-world impact, and I’m always excited to take on new data challenges.
             </p>
             
             <div className="pt-4" id="skills">
@@ -34,18 +33,18 @@ const About = () => {
                 <SkillTag>Python</SkillTag>
                 <SkillTag>RStudio</SkillTag>
                 <SkillTag>SQL</SkillTag>
+                <SkillTag>SPSS</SkillTag>
+                <SkillTag>Excel</SkillTag>
+                <SkillTag>Minitab</SkillTag>
                 <SkillTag>Machine Learning</SkillTag>
                 <SkillTag>Deep Learning</SkillTag>
                 <SkillTag>Statistics</SkillTag>
-                <SkillTag>Data Visualization</SkillTag>
-                <SkillTag>A/B Testing</SkillTag>
                 <SkillTag>Big Data</SkillTag>
-                <SkillTag>Excel</SkillTag>
-                <SkillTag>Tableau</SkillTag>
+                <SkillTag>Data Visualization</SkillTag>
                 <SkillTag>Power BI</SkillTag>
+                <SkillTag>Tableau</SkillTag>
+                <SkillTag>Looker Studio</SkillTag>
                 <SkillTag>Git/GitHub</SkillTag>
-                <SkillTag>SPSS</SkillTag>
-                <SkillTag>Minitab</SkillTag>
               </div>
             </div>
           </div>

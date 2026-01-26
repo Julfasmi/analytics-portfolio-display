@@ -1,12 +1,10 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* =========================
-   THEME VARIABLES
-========================= */
 @layer base {
   :root {
     --background: 210 33% 99%;
@@ -15,12 +13,28 @@
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
     --primary: 221 83% 12%;
+    --primary-foreground: 210 40% 98%;
+
     --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
     --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
     --accent: 172 100% 50%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
     --radius: 0.5rem;
   }
 
@@ -29,18 +43,32 @@
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
     --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
     --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
     --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
     --accent: 172 100% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
 
     --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 }
 
-/* =========================
-   BASE STYLE
-========================= */
 @layer base {
   * {
     @apply border-border;
@@ -50,61 +78,59 @@
     @apply bg-background text-foreground font-sans;
     scroll-behavior: smooth;
   }
-
+  
   .section-title {
     @apply text-3xl md:text-4xl font-bold relative mb-8 inline-block;
   }
-
+  
   .section-title::before {
     content: "";
     @apply absolute -bottom-2 left-0 w-full md:w-[70%] h-1 bg-ds-teal rounded-full opacity-70;
   }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-ds-teal to-blue-400 bg-clip-text text-transparent;
+  }
 }
 
-/* =========================
-   COMPONENTS
-========================= */
 @layer components {
+  .nav-link {
+    @apply relative px-3 py-2 text-ds-light hover:text-ds-teal transition-colors duration-300 text-base;
+  }
+  
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 bottom-0 h-[2px] w-0 bg-ds-teal transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
   .project-card {
-    @apply relative overflow-hidden rounded-lg bg-white dark:bg-ds-navy shadow-md hover:shadow-lg transition-all duration-300;
+    @apply relative overflow-hidden rounded-lg bg-white dark:bg-ds-navy shadow-md hover:shadow-lg transition-all duration-300 ease-in-out;
   }
-
+  
   .contact-input {
-    @apply w-full border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2
-           bg-white dark:bg-ds-navy text-ds-navy dark:text-ds-lightest;
+    @apply w-full border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 bg-white dark:bg-ds-navy text-ds-navy dark:text-ds-lightest placeholder-gray-400;
   }
 }
 
-/* =========================
-   SCROLL INDICATOR (DOTS)
-========================= */
-.scroll-indicator {
-  position: fixed;
-  top: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 50;
-
-  width: 120px;
-  height: 6px;
-
-  background-image: repeating-radial-gradient(
-    circle,
-    hsl(var(--accent)) 0 2px,
-    transparent 3px 10px
-  );
-
-  background-size: 20px 6px;
-  animation: scrollDots 1.2s linear infinite;
-  opacity: 0.9;
-}
-
-@keyframes scrollDots {
-  from {
-    background-position: 0 0;
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
   }
-  to {
-    background-position: 20px 0;
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
   }
 }
 
@@ -112,20 +138,18 @@
    HIDE SCROLLBAR (KEEP SCROLL)
 ========================= */
 
-/* Prevent layout shift when hiding scrollbar */
-html {
-  overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-}
-
 /* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
 }
 
-/* IE 10+ */
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Internet Explorer 10+ */
 body {
   -ms-overflow-style: none;
 }
-
