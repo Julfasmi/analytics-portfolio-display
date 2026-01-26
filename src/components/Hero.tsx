@@ -13,7 +13,7 @@ const Hero = () => {
               Julfasmi Hi. M. Nasir
             </h1>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ds-slate">
-              a Data Scientist turning data into <span className="text-gradient">Impact</span>.
+              a Data Scientist | Data Analyst turning data into <span className="text-gradient">Impact</span>.
             </h2>
             <p className="text-ds-slate max-w-lg text-lg">
               With a solid foundation in statistics and experience in data science,
