@@ -27,10 +27,14 @@ const Projects = () => {
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="section-title text-ds-navy dark:text-ds-lightest">Projects</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} />
-          ))}
+        <div className="mt-12 overflow-x-auto pb-4">
+          <div className="flex gap-6 min-w-max">
+            {projects.map((project, index) => (
+              <div key={index} className="w-[350px] md:w-[400px] flex-shrink-0">
+                <ProjectCard project={project} index={index} />
+              </div>
+            ))}
+          </div>
         </div>
         
         <div className="mt-12 text-center">
