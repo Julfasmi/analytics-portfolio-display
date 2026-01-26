@@ -1,8 +1,49 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 
 const Projects = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    let animationId: number;
+    let scrollPosition = 0;
+    const scrollSpeed = 0.5; // pixels per frame
+
+    const animate = () => {
+      scrollPosition += scrollSpeed;
+      
+      // Reset to start when reaching the end
+      if (scrollPosition >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+        scrollPosition = 0;
+      }
+      
+      scrollContainer.scrollLeft = scrollPosition;
+      animationId = requestAnimationFrame(animate);
+    };
+
+    // Start animation
+    animationId = requestAnimationFrame(animate);
+
+    // Pause on hover
+    const handleMouseEnter = () => cancelAnimationFrame(animationId);
+    const handleMouseLeave = () => {
+      scrollPosition = scrollContainer.scrollLeft;
+      animationId = requestAnimationFrame(animate);
+    };
+
+    scrollContainer.addEventListener('mouseenter', handleMouseEnter);
+    scrollContainer.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      cancelAnimationFrame(animationId);
+      scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
+      scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
   const projects = [
     {
       title: "Model object detection with YOLO",
@@ -27,7 +68,7 @@ const Projects = () => {
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="section-title text-ds-navy dark:text-ds-lightest">Projects</h2>
         
-        <div className="mt-12 overflow-x-auto pb-4">
+        <div ref={scrollRef} className="mt-12 overflow-x-auto pb-4 scrollbar-hide cursor-grab">
           <div className="flex gap-6 min-w-max">
             {projects.map((project, index) => (
               <div key={index} className="w-[350px] md:w-[400px] flex-shrink-0">
