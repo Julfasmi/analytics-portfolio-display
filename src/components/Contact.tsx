@@ -45,7 +45,7 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {
@@ -55,7 +55,7 @@ const Contact = () => {
         (error) => {
           console.error(error);
           alert("❌ Failed to send message. Please try again.");
-        }
+        },
       );
   };
 
@@ -76,18 +76,34 @@ const Contact = () => {
             </p>
 
             <div className="space-y-4">
-              <ContactItem icon={<Mail size={20} />} text="julfasmi.19@gmail.com" />
-              <ContactItem icon={<Phone size={20} />} text="+62 821-3803-6144" />
-              <ContactItem icon={<MapPin size={20} />} text="Depok City, West Java" />
+              <ContactItem
+                icon={<Mail size={20} />}
+                text="julfasmi.19@gmail.com"
+              />
+              <ContactItem
+                icon={<Phone size={20} />}
+                text="+62 821-3803-6144"
+              />
+              <ContactItem
+                icon={<MapPin size={20} />}
+                text="Depok City, West Java"
+              />
             </div>
 
             <div className="pt-4">
               <h3 className="text-xl font-semibold mb-4">More</h3>
               <div className="flex gap-4 flex-wrap">
-                <SocialLink name="LinkedIn" url="https://www.linkedin.com/in/julfasmi/" />
+                <SocialLink
+                  name="LinkedIn"
+                  url="https://www.linkedin.com/in/julfasmi/"
+                />
                 <SocialLink name="GitHub" url="https://github.com/Julfasmi" />
                 <SocialLink name="WhatsApp" url="https://wa.me/6282138036144" />
                 <SocialLink name="Medium" url="https://medium.com/@julfasmi" />
+                <SocialLink
+                  name="Curriculum Vitae"
+                  url="https://drive.google.com/drive/u/0/folders/1-8-46foLdh7M_-obLmFXgmQ7j4To8Ejd"
+                />
               </div>
             </div>
           </div>

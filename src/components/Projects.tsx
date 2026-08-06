@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import React, { useEffect, useRef, useState } from "react";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 interface Project {
   title: string;
@@ -16,61 +16,125 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
+      title: "PIC Allocation Dashboard Using Hierarchical Spatial Clustering",
+      description:
+        "An interactive R Shiny dashboard for optimizing PIC allocation by clustering partner locations using Hierarchical Clustering and geospatial distance analysis. The application provides interactive maps, regional filtering, operational summaries, and downloadable reports to support decision-making.",
+      tags: [
+        "Shiny",
+        "Data Analyst",
+        "Data Visualization",
+        "Geospatial Analysis",
+        "Hierarchical Clustering",
+        "GIS",
+        "Dashboard",
+        "Plotly",
+        "OpenStreetMap",
+      ],
+      image: "bg-red-100 dark:bg-red-900",
+      github: "https://github.com/Julfasmi/dashboard_pic",
+      demo: "https://julfasmi.shinyapps.io/dashboard_pic/",
+    },
+    {
       title: "Social Media Data Scraping & Analysis: Sumatra Floods 2025",
-      description: "Collected public X (Twitter) data on the Sumatra Floods 2025 using keyword-based scraping for social media analysis.",
-      tags: ["Python", "Web Scraping", "X API (Twitter API)", "Data Collection", "Text Mining", "Social Media Analytics"],
+      description:
+        "Collected public X (Twitter) data on the Sumatra Floods 2025 using keyword-based scraping for social media analysis.",
+      tags: [
+        "Python",
+        "Web Scraping",
+        "X API (Twitter API)",
+        "Data Collection",
+        "Text Mining",
+        "Social Media Analytics",
+      ],
       image: "bg-red-100 dark:bg-red-900",
       github: "https://github.com/Julfasmi/Scrape_X",
-      demo: null
+      demo: null,
     },
     {
       title: "Model Object Detection with YOLO",
-      description: "Implemented an object detection system using YOLO for detecting and localizing objects in images and videos.",
-      tags: ["Python", "YOLO", "Computer Vision", "Deep Learning", "Object Detection", "OpenCV"],
+      description:
+        "Implemented an object detection system using YOLO for detecting and localizing objects in images and videos.",
+      tags: [
+        "Python",
+        "YOLO",
+        "Computer Vision",
+        "Deep Learning",
+        "Object Detection",
+        "OpenCV",
+      ],
       image: "bg-blue-100 dark:bg-blue-900",
       github: "https://github.com/Julfasmi/Object-Detection",
-      demo: "https://object-detection19.streamlit.app/"
+      demo: "https://object-detection19.streamlit.app/",
     },
     {
       title: "REST API with FastAPI",
-      description: "Developed a REST API with FastAPI to support data processing and machine learning services.",
+      description:
+        "Developed a REST API with FastAPI to support data processing and machine learning services.",
       tags: ["Python", "FastAPI", "API Integration", "REST API"],
       image: "bg-green-100 dark:bg-green-900",
       github: "https://github.com/Julfasmi/Rest-API",
-      demo: "https://rest-api-production-56d2.up.railway.app/docs"
+      demo: "https://rest-api-production-56d2.up.railway.app/docs",
     },
     {
       title: "Retail Sales & Profit Analysis Dashboard",
-      description: "Built an interactive Retail Sales & Profit Analysis Dashboard in Power BI using a built-in retail dataset to practice data visualization and business insight exploration.",
-      tags: ["Data Visualization", "Power BI", "Profit Analysis", "Retail Analytics", "Sales Analysis,"],
+      description:
+        "Built an interactive Retail Sales & Profit Analysis Dashboard in Power BI using a built-in retail dataset to practice data visualization and business insight exploration.",
+      tags: [
+        "Data Visualization",
+        "Power BI",
+        "Profit Analysis",
+        "Retail Analytics",
+        "Sales Analysis,",
+      ],
       image: "bg-purple-100 dark:bg-purple-900",
       github: "https://github.com/Julfasmi/Belajar-PowerBI",
-      demo: null
+      demo: null,
     },
     {
       title: "Multi-channel digital campaign performance data dashboard",
-      description: "Built an interactive Looker Studio dashboard to track and analyze performance metrics across multiple digital marketing channels.",
-      tags: ["Looker Studio", "Digital Marketing Analytics", "Data Visualization", "KPI Monitoring", "Dashboarding"],
+      description:
+        "Built an interactive Looker Studio dashboard to track and analyze performance metrics across multiple digital marketing channels.",
+      tags: [
+        "Looker Studio",
+        "Digital Marketing Analytics",
+        "Data Visualization",
+        "KPI Monitoring",
+        "Dashboarding",
+      ],
       image: "bg-yellow-100 dark:bg-yellow-900",
       github: null,
-      demo: "https://lookerstudio.google.com/u/0/reporting/4afa64db-d1d6-4834-8d9b-8a9580efde08/page/09jUF"
+      demo: "https://lookerstudio.google.com/u/0/reporting/4afa64db-d1d6-4834-8d9b-8a9580efde08/page/09jUF",
     },
     {
       title: "Consumer Behavior Dashboard",
-      description: "Built an interactive Looker Studio dashboard to analyze consumer behavior, demographics, and purchasing patterns.",
-      tags: ["Looker Studio", "Consumer Behavior Analysis", "Customer Segmentation", "Data Visualization", "Business Analytics"],
+      description:
+        "Built an interactive Looker Studio dashboard to analyze consumer behavior, demographics, and purchasing patterns.",
+      tags: [
+        "Looker Studio",
+        "Consumer Behavior Analysis",
+        "Customer Segmentation",
+        "Data Visualization",
+        "Business Analytics",
+      ],
       image: "bg-pink-100 dark:bg-pink-900",
       github: null,
-      demo: "https://lookerstudio.google.com/u/0/reporting/696860d4-6fb1-42e6-9c04-13c9c9977d41/page/p_r0xp37divd"
+      demo: "https://lookerstudio.google.com/u/0/reporting/696860d4-6fb1-42e6-9c04-13c9c9977d41/page/p_r0xp37divd",
     },
     {
       title: "Text Mining with RStudio: People's Opinions",
-      description: "Performed text mining and sentiment analysis using R to analyze customer opinions about Swiss-Belboutique Yogyakarta Hotel, with insights published on Medium.",
-      tags: ["RStudio", "Text Mining", "Sentiment Analysis", "Natural Language Processing", "Data Visualization"],
+      description:
+        "Performed text mining and sentiment analysis using R to analyze customer opinions about Swiss-Belboutique Yogyakarta Hotel, with insights published on Medium.",
+      tags: [
+        "RStudio",
+        "Text Mining",
+        "Sentiment Analysis",
+        "Natural Language Processing",
+        "Data Visualization",
+      ],
       image: "bg-cyan-100 dark:bg-cyan-900",
       github: null,
-      demo: "https://julfasmi.medium.com/text-mining-dengan-rstudio-pendapat-orang-tentang-hotel-swiss-belboutique-yogyakarta-953183f7efb7"
-    }
+      demo: "https://julfasmi.medium.com/text-mining-dengan-rstudio-pendapat-orang-tentang-hotel-swiss-belboutique-yogyakarta-953183f7efb7",
+    },
   ];
 
   // AUTO SCROLL
@@ -84,7 +148,7 @@ const Projects = () => {
       const nextIndex = (activeIndex + 1) % projects.length;
       container.scrollTo({
         left: nextIndex * cardWidth,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
       setActiveIndex(nextIndex);
     }, 3000);
@@ -128,9 +192,10 @@ const Projects = () => {
               <span
                 key={index}
                 className={`w-2.5 h-2.5 rounded-full transition-all duration-300
-                  ${activeIndex === index
-                    ? 'bg-ds-teal scale-125'
-                    : 'bg-gray-300 dark:bg-gray-600'
+                  ${
+                    activeIndex === index
+                      ? "bg-ds-teal scale-125"
+                      : "bg-gray-300 dark:bg-gray-600"
                   }`}
               />
             ))}
