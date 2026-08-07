@@ -102,7 +102,7 @@ const Contact = () => {
                 <SocialLink name="Medium" url="https://medium.com/@julfasmi" />
                 <SocialLink
                   name="Curriculum Vitae"
-                  url="https://drive.google.com/drive/u/0/folders/1-8-46foLdh7M_-obLmFXgmQ7j4To8Ejd"
+                  url="https://drive.google.com/file/d/1po8xS17NHyW3FTsKrFWy8T4lyktvPY7I/view?usp=drive_link"
                 />
               </div>
             </div>
