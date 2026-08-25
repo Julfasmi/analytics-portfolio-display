@@ -67,6 +67,24 @@ const Projects = () => {
       demo: "https://object-detection19.streamlit.app/",
     },
     {
+      title: "Revenue Forecasting Simulator",
+      description:
+        "Interactive time-series forecasting and revenue scenario simulation application built with Python and Streamlit.",
+      tags: [
+        "Python",
+        "Streamlit",
+        "Time Series Forecasting",
+        "SARIMA",
+        "Revenue Forecasting",
+        "Scenario Analysis",
+        "Business Analytics",
+        "Data Science",
+      ],
+      image: "bg-blue-100 dark:bg-blue-900",
+      github: "https://github.com/Julfasmi/revenue-forecasting-simulator",
+      demo: "https://forecastingmodelsarima.streamlit.app/",
+    },
+    {
       title: "REST API with FastAPI",
       description:
         "Developed a REST API with FastAPI to support data processing and machine learning services.",
@@ -88,7 +106,7 @@ const Projects = () => {
       ],
       image: "bg-purple-100 dark:bg-purple-900",
       github: "https://github.com/Julfasmi/Belajar-PowerBI",
-      demo: null,
+      demo: "https://drive.google.com/file/d/1FYfsMVgnf9Wy54oEwq9r34SfwfTzLBm_/view?usp=sharing",
     },
     {
       title: "Multi-channel digital campaign performance data dashboard",
@@ -119,6 +137,41 @@ const Projects = () => {
       image: "bg-pink-100 dark:bg-pink-900",
       github: null,
       demo: "https://lookerstudio.google.com/u/0/reporting/696860d4-6fb1-42e6-9c04-13c9c9977d41/page/p_r0xp37divd",
+    },
+    {
+      title: "WiFi User Behavior Analysis",
+      description:
+        "Data analysis project exploring WiFi user behavior, usage patterns, and network activity trends.",
+      tags: [
+        "Data Analytics",
+        "User Behavior Analysis",
+        "Network Analytics",
+        "Python",
+        "Pandas",
+        "Data Visualization",
+        "Exploratory Data Analysis",
+        "Business Analytics",
+      ],
+      image: "bg-pink-100 dark:bg-pink-900",
+      github: null,
+      demo: "https://drive.google.com/file/d/1pMF7PXgosJWxo-AIvJfADHYfa-9zHSfP/view?usp=sharing",
+    },
+    {
+      title: "Sales Decline Root Cause Analysis",
+      description:
+        "Analyzing sales performance and business drivers to identify the root causes of declining revenue and generate actionable insights for performance improvement.",
+      tags: [
+        "Data Analytics",
+        "Sales Analytics",
+        "Root Cause Analysis",
+        "Business Intelligence",
+        "Business Analytics",
+        "Data Visualization",
+        "Exploratory Data Analysis",
+      ],
+      image: "bg-pink-100 dark:bg-pink-900",
+      github: null,
+      demo: "https://drive.google.com/file/d/1YbCD-7hXKu570_U9rb7COuR1tn-vUiZ5/view?usp=sharing",
     },
     {
       title: "Text Mining with RStudio: People's Opinions",
