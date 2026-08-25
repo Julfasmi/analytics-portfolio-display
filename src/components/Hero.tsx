@@ -1,6 +1,5 @@
-
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import React from "react";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -13,17 +12,24 @@ const Hero = () => {
               Julfasmi Hi. M. Nasir
             </h1>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ds-slate">
-              a Data Scientist and Data Analyst transforming data into actionable <span className="text-gradient">Impact</span>.
+              a Data Scientist and Data Analyst transforming data into
+              actionable <span className="text-gradient">Impact</span>.
             </h2>
             <p className="text-ds-slate max-w-lg text-lg">
-              With a strong foundation in statistics and hands-on experience in data science and analytics, I specialize in building machine learning models, performing data analysis, and transforming raw data into meaningful insights.
+              With a strong foundation in statistics and hands-on experience in
+              data science and analytics, I specialize in building machine
+              learning models, performing data analysis, and transforming raw
+              data into meaningful insights.
             </p>
             <p className="text-ds-slate max-w-lg text-lg">
-              I work across the full data lifecycle—data collection, cleaning, exploration, visualization, and modeling—combining analytical thinking with clear storytelling to support data-driven decisions and real-world impact.
+              I work across the full data lifecycle—data collection, cleaning,
+              exploration, visualization, and modeling—combining analytical
+              thinking with clear storytelling to support data-driven decisions
+              and real-world impact.
             </p>
             <div className="pt-4">
-              <a 
-                href="#projects" 
+              <a
+                href="#projects"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-ds-teal text-ds-navy rounded-md font-medium hover:bg-opacity-90 transition-all duration-300"
               >
                 Explore My Projects
@@ -31,23 +37,24 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          
+
           <div className="md:w-1/2 animate-fade-in animate-delay-200">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-ds-teal to-blue-400 rounded-lg transform rotate-3 opacity-20"></div>
               <div className="relative bg-white dark:bg-ds-navy p-8 rounded-lg shadow-xl">
-              <div className="w-full aspect-square rounded-lg overflow-hidden">
-                <img 
-                  src="/foto_profil2.jpg" 
-                  alt="Foto Profil Julfasmi"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="mt-6 space-y-4 text-center">
-                <p className="text-sm italic text-ds-slate dark:text-ds-light">
-                  "Good data tells a story. Great data tells the right story — to the right people — at the right time."
-                </p>
-              </div>
+                <div className="w-full aspect-square rounded-lg overflow-hidden">
+                  <img
+                    src="/foto_profil3.jpg"
+                    alt="Foto Profil Julfasmi"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="mt-6 space-y-4 text-center">
+                  <p className="text-sm italic text-ds-slate dark:text-ds-light">
+                    "Good data tells a story. Great data tells the right story —
+                    to the right people — at the right time."
+                  </p>
+                </div>
               </div>
             </div>
           </div>
